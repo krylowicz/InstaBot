@@ -28,6 +28,7 @@ class InstaBot:
 
         not_following_back = [user for user in following if user not in followers]
         print(not_following_back)
+        print(len(not_following_back))
 
     def _get_names(self):
         scroll_box = self.driver.find_element_by_xpath("/html/body/div[4]/div/div[2]")
